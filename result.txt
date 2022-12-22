@@ -1,0 +1,484 @@
+Baseline    BERT + last 4 pooling
+# Acc of each label:
+Label  0 : acc=76.6% | f1=78.3% | total=329 
+Label  1 : acc=62.1% | f1=64.1% | total=161 
+Label  2 : acc=34.0% | f1=32.0% | total=159 
+Label  3 : acc=42.4% | f1=56.3% | total=509 
+Label  4 : acc=98.1% | f1=86.3% | total=157 
+Label  5 : acc=54.7% | f1=43.5% | total=159 
+Label  6 : acc=61.7% | f1=60.4% | total=94  
+Label  7 : acc=62.2% | f1=64.5% | total=291 
+Label  8 : acc=59.3% | f1=54.1% | total=118 
+Label  9 : acc=77.1% | f1=75.0% | total=266 
+Label 10 : acc=71.4% | f1=68.3% | total=301 
+Label 11 : acc=54.4% | f1=61.5% | total=509 
+Label 12 : acc=50.8% | f1=61.7% | total=459 
+Label 13 : acc=56.2% | f1=44.9% | total=105 
+Label 14 : acc=91.4% | f1=87.3% | total=139 
+Label 15 : acc=65.0% | f1=59.4% | total=100 
+Label 16 : acc=62.2% | f1=59.3% | total=241 
+Label 17 : acc=100.0% | f1=97.9% | total=166
+Label 18 : acc=74.5% | f1=75.3% | total=231 
+Label 19 : acc=84.4% | f1=79.2% | total=167 
+Label 20 : acc=70.2% | f1=65.7% | total=258 
+Label 21 : acc=66.4% | f1=68.7% | total=152 
+Label 22 : acc=78.2% | f1=76.9% | total=303
+Label 23 : acc=79.7% | f1=66.4% | total=123
+Label 24 : acc=48.8% | f1=43.7% | total=160
+Label 25 : acc=84.3% | f1=78.3% | total=178
+Label 26 : acc=65.4% | f1=63.2% | total=263
+Label 27 : acc=98.1% | f1=97.6% | total=104
+Label 28 : acc=81.2% | f1=68.6% | total=160
+Label 29 : acc=82.1% | f1=70.2% | total=106
+Label 30 : acc=96.0% | f1=96.0% | total=176
+Label 31 : acc=45.6% | f1=54.7% | total=103
+On Dev  : macro f1 0.724
+On Test : loss 1.778, macro f1 : 0.675 , micro f1 : 0.672
+
+CosineModel
+# Acc of each label:
+Label  0 : acc=79.6% | f1=77.9% | total=329
+Label  1 : acc=57.8% | f1=55.4% | total=161
+Label  2 : acc=15.7% | f1=19.5% | total=159
+Label  3 : acc=45.2% | f1=57.8% | total=509
+Label  4 : acc=84.7% | f1=74.9% | total=157
+Label  5 : acc=40.3% | f1=34.2% | total=159
+Label  6 : acc=56.4% | f1=60.2% | total=94
+Label  7 : acc=55.7% | f1=55.5% | total=291
+Label  8 : acc=50.8% | f1=44.9% | total=118
+Label  9 : acc=72.9% | f1=71.3% | total=266
+Label 10 : acc=61.5% | f1=61.4% | total=301
+Label 11 : acc=52.7% | f1=57.6% | total=509
+Label 12 : acc=52.7% | f1=60.2% | total=459
+Label 13 : acc=49.5% | f1=41.3% | total=105
+Label 14 : acc=95.7% | f1=87.2% | total=139
+Label 15 : acc=73.0% | f1=59.1% | total=100
+Label 16 : acc=35.7% | f1=41.7% | total=241
+Label 17 : acc=100.0% | f1=97.1% | total=166
+Label 18 : acc=66.7% | f1=63.8% | total=231
+Label 19 : acc=84.4% | f1=82.7% | total=167
+Label 20 : acc=55.0% | f1=51.5% | total=258
+Label 21 : acc=53.3% | f1=54.2% | total=152
+Label 22 : acc=75.2% | f1=69.3% | total=303
+Label 23 : acc=69.1% | f1=54.5% | total=123
+Label 24 : acc=21.2% | f1=24.5% | total=160
+Label 25 : acc=83.7% | f1=70.8% | total=178
+Label 26 : acc=49.4% | f1=48.6% | total=263
+Label 27 : acc=93.3% | f1=95.6% | total=104
+Label 28 : acc=79.4% | f1=63.8% | total=160
+Label 29 : acc=61.3% | f1=57.5% | total=106
+Label 30 : acc=96.0% | f1=96.0% | total=176
+Label 31 : acc=28.2% | f1=32.0% | total=103
+On Dev  : macro f1 0.670
+On Test : loss 2.778, macro f1 : 0.601 , micro f1 : 0.609
+
+CosineModelMSE
+# Acc of each label:
+Label  0 : acc=76.6% | f1=80.3% | total=329
+Label  1 : acc=56.5% | f1=58.3% | total=161
+Label  2 : acc=32.7% | f1=32.8% | total=159
+Label  3 : acc=48.7% | f1=61.3% | total=509
+Label  4 : acc=96.2% | f1=85.3% | total=157
+Label  5 : acc=50.9% | f1=43.9% | total=159
+Label  6 : acc=60.6% | f1=57.9% | total=94 
+Label  7 : acc=63.6% | f1=62.2% | total=291
+Label  8 : acc=58.5% | f1=55.4% | total=118
+Label  9 : acc=79.7% | f1=75.3% | total=266
+Label 10 : acc=62.1% | f1=63.5% | total=301
+Label 11 : acc=62.1% | f1=65.3% | total=509
+Label 12 : acc=49.2% | f1=61.7% | total=459
+Label 13 : acc=54.3% | f1=46.3% | total=105
+Label 14 : acc=93.5% | f1=89.7% | total=139
+Label 15 : acc=66.0% | f1=60.0% | total=100
+Label 16 : acc=61.0% | f1=60.9% | total=241
+Label 17 : acc=98.2% | f1=97.6% | total=166
+Label 18 : acc=81.8% | f1=76.4% | total=231
+Label 19 : acc=85.0% | f1=79.8% | total=167
+Label 20 : acc=68.2% | f1=68.9% | total=258
+Label 21 : acc=59.2% | f1=62.9% | total=152
+Label 22 : acc=83.2% | f1=82.2% | total=303
+Label 23 : acc=77.2% | f1=70.9% | total=123
+Label 24 : acc=59.4% | f1=49.4% | total=160
+Label 25 : acc=79.2% | f1=74.6% | total=178
+Label 26 : acc=66.9% | f1=63.2% | total=263
+Label 27 : acc=99.0% | f1=96.3% | total=104
+Label 28 : acc=82.5% | f1=68.7% | total=160
+Label 29 : acc=81.1% | f1=72.6% | total=106
+Label 30 : acc=96.6% | f1=95.5% | total=176
+Label 31 : acc=51.5% | f1=53.3% | total=103
+On Dev  : macro f1 0.698
+On Test : loss 0.017, macro f1 : 0.679 , micro f1 : 0.680
+
+
+CosineModelMSE_2    with alpha=0.4
+# Acc of each label:
+Label  0 : acc=77.8% | f1=79.6% | total=329
+Label  1 : acc=60.2% | f1=60.1% | total=161
+Label  2 : acc=30.8% | f1=34.6% | total=159
+Label  3 : acc=47.7% | f1=61.3% | total=509
+Label  4 : acc=96.8% | f1=87.1% | total=157
+Label  5 : acc=53.5% | f1=46.1% | total=159
+Label  6 : acc=62.8% | f1=59.9% | total=94 
+Label  7 : acc=68.7% | f1=66.4% | total=291
+Label  8 : acc=60.2% | f1=59.9% | total=118
+Label  9 : acc=75.9% | f1=74.8% | total=266
+Label 10 : acc=69.4% | f1=67.5% | total=301
+Label 11 : acc=60.1% | f1=65.5% | total=509
+Label 12 : acc=56.2% | f1=65.2% | total=459
+Label 13 : acc=54.3% | f1=46.2% | total=105
+Label 14 : acc=93.5% | f1=89.7% | total=139
+Label 15 : acc=80.0% | f1=64.0% | total=100
+Label 16 : acc=53.9% | f1=57.1% | total=241
+Label 17 : acc=99.4% | f1=98.2% | total=166
+Label 18 : acc=81.4% | f1=78.0% | total=231
+Label 19 : acc=83.8% | f1=78.7% | total=167
+Label 20 : acc=69.4% | f1=69.9% | total=258
+Label 21 : acc=66.4% | f1=67.8% | total=152
+Label 22 : acc=84.8% | f1=81.2% | total=303
+Label 23 : acc=78.9% | f1=68.6% | total=123
+Label 24 : acc=55.6% | f1=43.4% | total=160
+Label 25 : acc=81.5% | f1=80.6% | total=178
+Label 26 : acc=62.0% | f1=61.3% | total=263
+Label 27 : acc=99.0% | f1=97.6% | total=104
+Label 28 : acc=80.6% | f1=68.6% | total=160
+Label 29 : acc=80.2% | f1=73.0% | total=106
+Label 30 : acc=96.0% | f1=95.2% | total=176
+Label 31 : acc=47.6% | f1=50.8% | total=103
+On Dev  : macro f1 0.763
+On Test : loss 0.015, macro f1 : 0.687 , micro f1 : 0.688
+
+CosineModelMSE_2 with TF augmentation
+# Acc of each label:
+Label  0 : acc=73.9% | f1=75.6% | total=329
+Label  1 : acc=59.0% | f1=59.7% | total=161
+Label  2 : acc=34.0% | f1=30.1% | total=159
+Label  3 : acc=37.5% | f1=51.7% | total=509
+Label  4 : acc=97.5% | f1=85.5% | total=157
+Label  5 : acc=47.2% | f1=40.6% | total=159
+Label  6 : acc=58.5% | f1=52.9% | total=94
+Label  7 : acc=55.7% | f1=60.1% | total=291
+Label  8 : acc=50.8% | f1=51.3% | total=118
+Label  9 : acc=78.6% | f1=73.5% | total=266
+Label 10 : acc=68.8% | f1=64.6% | total=301
+Label 11 : acc=54.0% | f1=61.6% | total=509
+Label 12 : acc=51.0% | f1=59.6% | total=459
+Label 13 : acc=52.4% | f1=46.8% | total=105
+Label 14 : acc=92.8% | f1=85.4% | total=139
+Label 15 : acc=70.0% | f1=59.3% | total=100
+Label 16 : acc=54.4% | f1=57.6% | total=241
+Label 17 : acc=100.0% | f1=95.1% | total=166
+Label 18 : acc=72.7% | f1=69.9% | total=231
+Label 19 : acc=82.0% | f1=78.1% | total=167
+Label 20 : acc=72.5% | f1=68.7% | total=258
+Label 21 : acc=67.8% | f1=69.8% | total=152
+Label 22 : acc=82.2% | f1=77.0% | total=303
+Label 23 : acc=75.6% | f1=68.6% | total=123
+Label 24 : acc=52.5% | f1=46.4% | total=160
+Label 25 : acc=86.5% | f1=79.8% | total=178
+Label 26 : acc=63.5% | f1=61.3% | total=263
+Label 27 : acc=98.1% | f1=94.4% | total=104
+Label 28 : acc=78.8% | f1=67.7% | total=160
+Label 29 : acc=81.1% | f1=70.2% | total=106
+Label 30 : acc=96.0% | f1=94.7% | total=176
+Label 31 : acc=52.4% | f1=56.8% | total=103
+On Dev  : macro f1 0.969
+On Test : loss 0.018, macro f1 : 0.661 , micro f1 : 0.659
+
+CosineModelMSE_2 with translate augmentation
+# Acc of each label:
+Label  0 : acc=79.0% | f1=79.3% | total=329
+Label  1 : acc=61.5% | f1=61.7% | total=161
+Label  2 : acc=30.8% | f1=33.7% | total=159
+Label  3 : acc=42.6% | f1=55.3% | total=509
+Label  4 : acc=96.2% | f1=86.0% | total=157
+Label  5 : acc=53.5% | f1=46.6% | total=159
+Label  6 : acc=61.7% | f1=59.5% | total=94
+Label  7 : acc=66.0% | f1=66.3% | total=291
+Label  8 : acc=51.7% | f1=56.0% | total=118
+Label  9 : acc=75.6% | f1=74.7% | total=266
+Label 10 : acc=73.8% | f1=68.6% | total=301
+Label 11 : acc=60.7% | f1=65.7% | total=509
+Label 12 : acc=56.4% | f1=64.6% | total=459
+Label 13 : acc=58.1% | f1=47.1% | total=105
+Label 14 : acc=92.8% | f1=87.5% | total=139
+Label 15 : acc=77.0% | f1=62.1% | total=100
+Label 16 : acc=60.6% | f1=59.5% | total=241
+Label 17 : acc=100.0% | f1=95.4% | total=166
+Label 18 : acc=83.5% | f1=78.5% | total=231
+Label 19 : acc=82.0% | f1=79.7% | total=167
+Label 20 : acc=69.0% | f1=66.7% | total=258
+Label 21 : acc=65.1% | f1=68.3% | total=152
+Label 22 : acc=84.5% | f1=80.5% | total=303
+Label 23 : acc=78.9% | f1=72.1% | total=123
+Label 24 : acc=52.5% | f1=45.7% | total=160
+Label 25 : acc=89.9% | f1=81.6% | total=178
+Label 26 : acc=59.7% | f1=61.7% | total=263
+Label 27 : acc=99.0% | f1=97.6% | total=104
+Label 28 : acc=78.8% | f1=69.2% | total=160
+Label 29 : acc=77.4% | f1=72.6% | total=106
+Label 30 : acc=96.0% | f1=95.2% | total=176
+Label 31 : acc=49.5% | f1=58.6% | total=103
+On Dev  : macro f1 0.919
+On Test : loss 0.015, macro f1 : 0.687 , micro f1 : 0.687
+
+CosineModelMSE_3    with alpha=0.3
+# Acc of each label:
+Label  0 : acc=78.1% | f1=79.9% | total=329 
+Label  1 : acc=64.0% | f1=63.4% | total=161 
+Label  2 : acc=23.9% | f1=29.1% | total=159 
+Label  3 : acc=46.8% | f1=59.9% | total=509 
+Label  4 : acc=92.4% | f1=84.5% | total=157 
+Label  5 : acc=57.2% | f1=42.3% | total=159 
+Label  6 : acc=62.8% | f1=62.1% | total=94  
+Label  7 : acc=68.0% | f1=64.8% | total=291 
+Label  8 : acc=55.9% | f1=58.4% | total=118 
+Label  9 : acc=77.8% | f1=74.9% | total=266 
+Label 10 : acc=72.8% | f1=67.9% | total=301 
+Label 11 : acc=58.0% | f1=65.3% | total=509 
+Label 12 : acc=52.7% | f1=63.8% | total=459 
+Label 13 : acc=63.8% | f1=50.8% | total=105 
+Label 14 : acc=94.2% | f1=88.8% | total=139 
+Label 15 : acc=77.0% | f1=61.8% | total=100 
+Label 16 : acc=53.5% | f1=57.0% | total=241 
+Label 17 : acc=100.0% | f1=97.6% | total=166
+Label 18 : acc=85.7% | f1=78.3% | total=231 
+Label 19 : acc=83.8% | f1=75.9% | total=167 
+Label 20 : acc=66.7% | f1=68.9% | total=258 
+Label 21 : acc=67.1% | f1=67.5% | total=152 
+Label 22 : acc=82.5% | f1=80.9% | total=303 
+Label 23 : acc=78.0% | f1=70.8% | total=123
+Label 24 : acc=51.2% | f1=46.5% | total=160
+Label 25 : acc=87.6% | f1=80.8% | total=178
+Label 26 : acc=59.7% | f1=60.4% | total=263
+Label 27 : acc=99.0% | f1=95.8% | total=104
+Label 28 : acc=81.9% | f1=68.1% | total=160
+Label 29 : acc=84.9% | f1=70.9% | total=106
+Label 30 : acc=96.0% | f1=95.5% | total=176
+Label 31 : acc=48.5% | f1=56.8% | total=103
+On Dev  : macro f1 0.708
+On Test : loss 0.015, macro f1 : 0.684 , micro f1 : 0.685
+
+BERT with seperate title and main text
+# Acc of each label:
+Label  0 : acc=71.7% | f1=75.5% | total=329
+Label  1 : acc=60.9% | f1=61.2% | total=161
+Label  2 : acc=36.5% | f1=32.1% | total=159
+Label  3 : acc=51.7% | f1=63.8% | total=509
+Label  4 : acc=98.7% | f1=91.4% | total=157
+Label  5 : acc=53.5% | f1=41.6% | total=159
+Label  6 : acc=56.4% | f1=61.6% | total=94
+Label  7 : acc=63.9% | f1=63.6% | total=291
+Label  8 : acc=61.9% | f1=56.4% | total=118
+Label  9 : acc=75.9% | f1=73.5% | total=266
+Label 10 : acc=68.8% | f1=65.9% | total=301
+Label 11 : acc=56.2% | f1=62.3% | total=509
+Label 12 : acc=41.4% | f1=53.7% | total=459
+Label 13 : acc=60.0% | f1=47.9% | total=105
+Label 14 : acc=95.0% | f1=93.3% | total=139
+Label 15 : acc=69.0% | f1=62.7% | total=100
+Label 16 : acc=58.5% | f1=53.1% | total=241
+Label 17 : acc=99.4% | f1=98.5% | total=166
+Label 18 : acc=79.2% | f1=76.6% | total=231
+Label 19 : acc=83.2% | f1=88.5% | total=167
+Label 20 : acc=70.2% | f1=67.7% | total=258
+Label 21 : acc=59.9% | f1=63.4% | total=152
+Label 22 : acc=84.2% | f1=80.2% | total=303
+Label 23 : acc=76.4% | f1=64.2% | total=123
+Label 24 : acc=43.1% | f1=36.5% | total=160
+Label 25 : acc=85.4% | f1=80.9% | total=178
+Label 26 : acc=61.2% | f1=61.9% | total=263
+Label 27 : acc=99.0% | f1=99.5% | total=104
+Label 28 : acc=81.9% | f1=68.1% | total=160
+Label 29 : acc=78.3% | f1=71.2% | total=106
+Label 30 : acc=95.5% | f1=96.8% | total=176
+Label 31 : acc=49.5% | f1=58.6% | total=103
+On Dev  : macro f1 0.712
+On Test : loss 1.362, macro f1 : 0.679 , micro f1 : 0.670
+
+CosineModelMSE_4    with alpha=0.5
+# Acc of each label:
+Label  0 : acc=79.0% | f1=80.5% | total=329
+Label  1 : acc=58.4% | f1=58.7% | total=161
+Label  2 : acc=27.0% | f1=31.3% | total=159
+Label  3 : acc=45.8% | f1=59.1% | total=509
+Label  4 : acc=96.2% | f1=87.8% | total=157
+Label  5 : acc=55.3% | f1=43.8% | total=159
+Label  6 : acc=64.9% | f1=58.7% | total=94 
+Label  7 : acc=68.7% | f1=65.6% | total=291
+Label  8 : acc=60.2% | f1=59.7% | total=118
+Label  9 : acc=74.8% | f1=74.3% | total=266
+Label 10 : acc=71.4% | f1=67.2% | total=301
+Label 11 : acc=59.7% | f1=65.0% | total=509
+Label 12 : acc=51.6% | f1=61.5% | total=459
+Label 13 : acc=57.1% | f1=44.6% | total=105
+Label 14 : acc=93.5% | f1=90.6% | total=139
+Label 15 : acc=74.0% | f1=64.6% | total=100
+Label 16 : acc=54.4% | f1=57.1% | total=241
+Label 17 : acc=100.0% | f1=97.9% | total=166
+Label 18 : acc=78.8% | f1=76.0% | total=231
+Label 19 : acc=84.4% | f1=79.9% | total=167
+Label 20 : acc=65.1% | f1=68.9% | total=258
+Label 21 : acc=61.2% | f1=65.3% | total=152
+Label 22 : acc=85.8% | f1=82.3% | total=303
+Label 23 : acc=75.6% | f1=69.7% | total=123
+Label 24 : acc=60.6% | f1=46.4% | total=160
+Label 25 : acc=85.4% | f1=82.8% | total=178
+Label 26 : acc=62.0% | f1=60.8% | total=263
+Label 27 : acc=99.0% | f1=96.7% | total=104
+Label 28 : acc=80.0% | f1=67.2% | total=160
+Label 29 : acc=82.1% | f1=72.8% | total=106
+Label 30 : acc=96.6% | f1=96.6% | total=176
+Label 31 : acc=57.3% | f1=62.8% | total=103
+On Dev  : macro f1 0.723
+On Test : loss 0.015, macro f1 : 0.686 , micro f1 : 0.684
+
+CosineModelMSE_5    with alpha=0.6
+# Acc of each label:
+Label  0 : acc=73.9% | f1=78.9% | total=329
+Label  1 : acc=60.2% | f1=61.6% | total=161
+Label  2 : acc=22.0% | f1=26.3% | total=159
+Label  3 : acc=46.0% | f1=59.5% | total=509
+Label  4 : acc=98.1% | f1=89.0% | total=157
+Label  5 : acc=61.0% | f1=43.5% | total=159
+Label  6 : acc=59.6% | f1=56.0% | total=94
+Label  7 : acc=69.1% | f1=63.9% | total=291
+Label  8 : acc=55.1% | f1=57.0% | total=118
+Label  9 : acc=79.3% | f1=75.4% | total=266
+Label 10 : acc=70.4% | f1=67.4% | total=301
+Label 11 : acc=57.8% | f1=64.2% | total=509
+Label 12 : acc=52.1% | f1=60.9% | total=459
+Label 13 : acc=64.8% | f1=47.1% | total=105
+Label 14 : acc=95.0% | f1=91.7% | total=139
+Label 15 : acc=76.0% | f1=66.7% | total=100
+Label 16 : acc=50.6% | f1=54.1% | total=241
+Label 17 : acc=100.0% | f1=99.4% | total=166
+Label 18 : acc=84.0% | f1=78.9% | total=231
+Label 19 : acc=83.8% | f1=85.9% | total=167
+Label 20 : acc=64.0% | f1=67.6% | total=258
+Label 21 : acc=67.8% | f1=70.5% | total=152
+Label 22 : acc=83.8% | f1=80.8% | total=303
+Label 23 : acc=83.7% | f1=70.3% | total=123
+Label 24 : acc=55.6% | f1=48.1% | total=160
+Label 25 : acc=87.1% | f1=82.4% | total=178
+Label 26 : acc=60.8% | f1=62.5% | total=263
+Label 27 : acc=99.0% | f1=98.1% | total=104
+Label 28 : acc=83.8% | f1=67.8% | total=160
+Label 29 : acc=86.8% | f1=72.2% | total=106
+Label 30 : acc=96.0% | f1=96.8% | total=176
+Label 31 : acc=57.3% | f1=60.5% | total=103
+On Dev  : macro f1 0.715
+On Test : loss 0.015, macro f1 : 0.689 , micro f1 : 0.685
+
+CosineModelMSE_6    with alpha=0.7
+# Acc of each label:
+Label  0 : acc=78.4% | f1=78.8% | total=329
+Label  1 : acc=63.4% | f1=63.0% | total=161
+Label  2 : acc=25.2% | f1=30.1% | total=159
+Label  3 : acc=45.4% | f1=58.9% | total=509
+Label  4 : acc=97.5% | f1=88.2% | total=157
+Label  5 : acc=52.2% | f1=43.7% | total=159
+Label  6 : acc=60.6% | f1=59.7% | total=94
+Label  7 : acc=70.4% | f1=65.7% | total=291
+Label  8 : acc=58.5% | f1=59.7% | total=118
+Label  9 : acc=76.7% | f1=75.0% | total=266
+Label 10 : acc=65.1% | f1=63.9% | total=301
+Label 11 : acc=58.3% | f1=65.5% | total=509
+Label 12 : acc=56.0% | f1=64.0% | total=459
+Label 13 : acc=60.0% | f1=47.7% | total=105
+Label 14 : acc=92.8% | f1=88.1% | total=139
+Label 15 : acc=75.0% | f1=60.7% | total=100
+Label 16 : acc=54.8% | f1=56.5% | total=241
+Label 17 : acc=100.0% | f1=97.9% | total=166
+Label 18 : acc=76.2% | f1=75.2% | total=231
+Label 19 : acc=84.4% | f1=76.4% | total=167
+Label 20 : acc=64.3% | f1=67.8% | total=258
+Label 21 : acc=65.8% | f1=67.8% | total=152
+Label 22 : acc=83.2% | f1=81.3% | total=303
+Label 23 : acc=74.8% | f1=67.6% | total=123
+Label 24 : acc=55.6% | f1=45.9% | total=160
+Label 25 : acc=83.7% | f1=81.0% | total=178
+Label 26 : acc=63.5% | f1=61.7% | total=263
+Label 27 : acc=99.0% | f1=97.2% | total=104
+Label 28 : acc=82.5% | f1=66.2% | total=160
+Label 29 : acc=82.1% | f1=69.9% | total=106
+Label 30 : acc=96.6% | f1=96.3% | total=176
+Label 31 : acc=57.3% | f1=61.8% | total=103
+On Dev  : macro f1 0.709
+On Test : loss 0.015, macro f1 : 0.682 , micro f1 : 0.682
+
+CosineModelMSE_7    with alpha=0.8
+# Acc of each label:
+Label  0 : acc=79.9% | f1=82.1% | total=329
+Label  1 : acc=67.7% | f1=64.1% | total=161
+Label  2 : acc=21.4% | f1=26.2% | total=159
+Label  3 : acc=47.3% | f1=60.9% | total=509
+Label  4 : acc=95.5% | f1=88.2% | total=157
+Label  5 : acc=57.2% | f1=43.9% | total=159
+Label  6 : acc=61.7% | f1=59.8% | total=94
+Label  7 : acc=68.7% | f1=65.3% | total=291
+Label  8 : acc=56.8% | f1=56.8% | total=118
+Label  9 : acc=78.9% | f1=74.9% | total=266
+Label 10 : acc=71.1% | f1=65.7% | total=301
+Label 11 : acc=56.2% | f1=64.3% | total=509
+Label 12 : acc=54.2% | f1=63.5% | total=459
+Label 13 : acc=61.9% | f1=48.1% | total=105
+Label 14 : acc=93.5% | f1=87.5% | total=139
+Label 15 : acc=76.0% | f1=63.1% | total=100
+Label 16 : acc=53.5% | f1=56.1% | total=241
+Label 17 : acc=100.0% | f1=99.1% | total=166
+Label 18 : acc=81.4% | f1=76.7% | total=231
+Label 19 : acc=84.4% | f1=76.4% | total=167
+Label 20 : acc=65.5% | f1=68.4% | total=258
+Label 21 : acc=66.4% | f1=69.2% | total=152
+Label 22 : acc=84.5% | f1=80.9% | total=303
+Label 23 : acc=77.2% | f1=70.6% | total=123
+Label 24 : acc=51.2% | f1=48.1% | total=160
+Label 25 : acc=87.6% | f1=81.7% | total=178
+Label 26 : acc=55.1% | f1=58.3% | total=263
+Label 27 : acc=99.0% | f1=95.4% | total=104
+Label 28 : acc=85.0% | f1=66.7% | total=160
+Label 29 : acc=78.3% | f1=66.7% | total=106
+Label 30 : acc=96.6% | f1=96.6% | total=176
+Label 31 : acc=53.4% | f1=60.1% | total=103
+On Dev  : macro f1 0.700
+On Test : loss 0.015, macro f1 : 0.683 , micro f1 : 0.684
+
+CosineModelMSE_5_2  with alpha=0.6 && data_helper changed
+# Acc of each label:
+Label  0 : acc=75.4% | f1=78.4% | total=329
+Label  1 : acc=61.5% | f1=58.9% | total=161
+Label  2 : acc=29.6% | f1=33.8% | total=159
+Label  3 : acc=44.2% | f1=58.1% | total=509
+Label  4 : acc=97.5% | f1=88.2% | total=157
+Label  5 : acc=55.3% | f1=43.3% | total=159
+Label  6 : acc=61.7% | f1=59.2% | total=94
+Label  7 : acc=63.9% | f1=60.8% | total=291
+Label  8 : acc=54.2% | f1=56.9% | total=118
+Label  9 : acc=76.3% | f1=73.0% | total=266
+Label 10 : acc=62.5% | f1=64.3% | total=301
+Label 11 : acc=59.9% | f1=64.3% | total=509
+Label 12 : acc=53.4% | f1=61.6% | total=459
+Label 13 : acc=50.5% | f1=44.2% | total=105
+Label 14 : acc=93.5% | f1=85.5% | total=139
+Label 15 : acc=72.0% | f1=66.7% | total=100
+Label 16 : acc=55.2% | f1=60.5% | total=241
+Label 17 : acc=100.0% | f1=96.8% | total=166
+Label 18 : acc=71.0% | f1=73.5% | total=231
+Label 19 : acc=82.6% | f1=76.0% | total=167
+Label 20 : acc=69.4% | f1=68.1% | total=258
+Label 21 : acc=63.8% | f1=65.8% | total=152
+Label 22 : acc=85.1% | f1=79.4% | total=303
+Label 23 : acc=81.3% | f1=68.0% | total=123
+Label 24 : acc=53.1% | f1=43.6% | total=160
+Label 25 : acc=86.5% | f1=79.0% | total=178
+Label 26 : acc=62.4% | f1=61.3% | total=263
+Label 27 : acc=100.0% | f1=98.1% | total=104
+Label 28 : acc=81.2% | f1=68.1% | total=160
+Label 29 : acc=77.4% | f1=69.5% | total=106
+Label 30 : acc=96.6% | f1=96.0% | total=176
+Label 31 : acc=53.4% | f1=59.1% | total=103
+On Dev  : macro f1 0.746
+On Test : loss 0.017, macro f1 : 0.675 , micro f1 : 0.673
+
+CosineModelMSE_5_3  with alpha=0.6 && title + (whole text)
+
