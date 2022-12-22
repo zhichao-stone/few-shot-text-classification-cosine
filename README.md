@@ -2,7 +2,7 @@
 
 #### 1. Baseline说明：
 
-baseline原文地址：https://discussion.datafountain.cn/articles/detail/2513
+baseline原文地址：[DataFountain 交流讨论](https://discussion.datafountain.cn/articles/detail/2513)(BERT + last 4 pooling)
 
 此处baseline对上述做了一定修改，包括：
 
@@ -21,7 +21,7 @@ baseline原文地址：https://discussion.datafountain.cn/articles/detail/2513
 
 - **主要依赖包：** pytorch, transformers
 
-- **BERT**：预训练模型https://huggingface.co/hfl/chinese-roberta-wwm-ext，下载后chinese-roberta-wwm-ext文件夹放到与train.py、test.py同级目录
+- **BERT**：预训练模型[chinese-roberta-wwm-ext](https://huggingface.co/hfl/chinese-roberta-wwm-ext)。下载后chinese-roberta-wwm-ext文件夹放到与train.py、test.py同级目录
 
 - **训练：**
 
