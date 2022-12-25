@@ -1,5 +1,6 @@
 import json
 import random
+from util import label_to_prompt
 
 import torch
 from torch.utils.data import Dataset, DataLoader, RandomSampler, SequentialSampler
@@ -35,7 +36,6 @@ class CCFDataset(Dataset):
             }
         elif self.method == 'Cosine':
             text = f'专利由\"{assignee}\"申请，详细说明为：{abstract}'
-            # text = f'这份专利的标题为《{title}》，由\"{assignee}\"申请，详细说明为：{abstract}'
             text_inputs = self.tokenizer(text, max_length=self.max_len, padding='max_length', truncation=True)
             title_inputs = self.tokenizer(title, max_length=30, padding='max_length', truncation=True)
             text_inputs['input_ids'][0] = 101
