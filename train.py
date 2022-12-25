@@ -62,5 +62,3 @@ if __name__ == '__main__':
 
     logging.info(f'Training Configs: \n{config}')
     train(model, train_loader, dev_loader, config)
-
-    

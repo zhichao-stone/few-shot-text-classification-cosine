@@ -80,3 +80,11 @@ class CCFModel(nn.Module):
             accuracy = (label == pred_label_id).float().sum() / label.shape[0]
         return loss, accuracy, pred_label_id, label
         
+
+def load_model(config, model_name, method):
+    model = CCFModel(config, method)
+    ckp = torch.load(f'{config.save_path}/{model_name}/model_best.pkl', map_location='cpu')
+    model.load_state_dict(ckp['model_state_dict'], strict=False)
+    if torch.cuda.is_available():
+        model = torch.nn.parallel.DataParallel(model.cuda())
+    return ckp['f1_macro'], model

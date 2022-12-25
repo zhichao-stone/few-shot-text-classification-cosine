@@ -1,5 +1,4 @@
 import torch
-import numpy as np
 from sklearn.metrics import f1_score
 from transformers import AdamW, get_linear_schedule_with_warmup
 import warnings

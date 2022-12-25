@@ -1,11 +1,10 @@
 import json
-import torch
 from torch.utils.data import SequentialSampler, DataLoader
 from util import evaluate
 
 from config import Config
 from data_helper import CCFDataset
-from model import CCFModel
+from model import load_model
 
 config = Config()
 # read test data
@@ -19,14 +18,8 @@ loader = DataLoader(
     sampler=SequentialSampler(dataset), drop_last=False
 )
 # load model
-model = CCFModel(config, config.method)
-ckp = torch.load(f'{config.save_path}/{config.model_name}/model_best.pkl', map_location='cpu')
-model.load_state_dict(ckp['model_state_dict'], strict=False)
-if torch.cuda.is_available():
-    model = torch.nn.parallel.DataParallel(model.cuda())
-
+dev_f1_macro, model = load_model(config, config.model_name, config.method)
 # test
-dev_f1_macro = ckp['f1_macro']
 test_loss, test_f1_macro, test_f1_micro = evaluate(model, loader, test_mode=True)
 print(f'On Dev  : macro f1 {dev_f1_macro:.4f}')
 print(f'On Test : loss {test_loss:.4f}, macro f1 : {test_f1_macro:.4f} , micro f1 : {test_f1_micro:.4f}')
