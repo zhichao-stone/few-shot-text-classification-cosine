@@ -19,7 +19,7 @@ loader = DataLoader(
     sampler=SequentialSampler(dataset), drop_last=False
 )
 # load model
-model = CCFModel(config)
+model = CCFModel(config, config.method)
 ckp = torch.load(f'{config.save_path}/{config.model_name}/model_best.pkl', map_location='cpu')
 model.load_state_dict(ckp['model_state_dict'], strict=False)
 if torch.cuda.is_available():

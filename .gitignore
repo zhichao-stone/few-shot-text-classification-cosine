@@ -1,5 +1,4 @@
-*/__pycache__
-chinese-roberta-wwm-ext/*
-save/*
-analyze_each_label.py
+__pycache__
+chinese-roberta-wwm-ext
+save
 func_test.py

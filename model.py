@@ -2,20 +2,20 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from transformers import BertModel, BertTokenizer
-from patent_classification import label_to_prompt
+from util import label_to_prompt
 
 
 class CCFModel(nn.Module):
-    def __init__(self, config):
+    def __init__(self, config, method):
         super(CCFModel, self).__init__()
         self.device = config.device
         self.dropout = config.dropout
-        self.method = config.method
+        self.method = method
 
         if self.method == 'Baseline':
-            self.bert = BertModel.from_pretrained(config.bert_dir, output_hidden_states=False)
-        else:
             self.bert = BertModel.from_pretrained(config.bert_dir, output_hidden_states=True)
+        else:
+            self.bert = BertModel.from_pretrained(config.bert_dir, output_hidden_states=False)
         
         self.tokenizer = BertTokenizer.from_pretrained(config.bert_dir)
         self.text_embedding = self.bert.embeddings

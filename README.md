@@ -58,6 +58,6 @@ TF效果差可能是因为没有对title做改变，而Cosine模型加大了titl
 
 Cosine模型title权重$\alpha$和测试集上macro f1结果如下：
 
-![cosine_result](./cosine_result.png)
+![cosine_result](./results/cosine_result.png)
 
 有点玄乎，不过大体上0.4-0.6的效果比较好

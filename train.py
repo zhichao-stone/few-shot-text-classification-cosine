@@ -55,7 +55,7 @@ def train(model, train_loader, dev_loader, config):
 if __name__ == '__main__':
     config = Config()
     train_loader, dev_loader = create_dataloaders(config)
-    model = CCFModel(config)
+    model = CCFModel(config, config.method)
 
     if config.cuda >= 0:
         model = torch.nn.parallel.DataParallel(model.to(config.device))

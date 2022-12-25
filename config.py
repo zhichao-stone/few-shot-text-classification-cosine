@@ -34,7 +34,6 @@ class Config(object):
         parser.add_argument('--max_steps', default=50000, type=int, metavar='N', help='number of total steps to run')
         parser.add_argument('--minimum_lr', type=float, default=1e-6, help='minimum learning rate')
         parser.add_argument('--learning_rate', type=float, default=2e-4, help='initial learning rate')
-        parser.add_argument('--minimum_loss', type=float, default=0.005, help='stop when loss down below minimum loss')
         parser.add_argument('--weight_decay', type=float, default=0.01, help='Weight decay')
         parser.add_argument('--adam_epsilon', default=1e-6, type=float, help='Epsilon for Adam optimizer')
         # title BERT
@@ -45,7 +44,8 @@ class Config(object):
         for key in args.__dict__:
             setattr(self, key, args.__dict__[key])
         
-        assert self.method == 'Baseline' or self.method == 'Cosine'
+        method_options = ['Baseline', 'Cosine', 'WeightedBERT', 'Fusion']
+        assert self.method in method_options
 
         # device
         self.device = torch.device('cuda:{}'.format(self.cuda)) if self.cuda >= 0 and torch.cuda.is_available() else torch.device('cpu')
