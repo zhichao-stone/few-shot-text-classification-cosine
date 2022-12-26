@@ -72,8 +72,8 @@ class CCFModel(nn.Module):
     
     @staticmethod
     def cal_mse_loss(prediction, label):
-        loss_label = label.squeeze(dim=1)
-        loss_label = F.one_hot(loss_label, num_classes=32).to(torch.float)
+        label = label.squeeze(dim=1)
+        loss_label = F.one_hot(label, num_classes=32).to(torch.float)
         loss = F.mse_loss(prediction, loss_label)
         with torch.no_grad():
             pred_label_id = torch.argmax(prediction, dim=1)

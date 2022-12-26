@@ -480,5 +480,3 @@ Label 31 : acc=53.4% | f1=59.1% | total=103
 On Dev  : macro f1 0.746
 On Test : loss 0.017, macro f1 : 0.675 , micro f1 : 0.673
 
-CosineModelMSE_5_3  with alpha=0.6 && title + (whole text)
-
