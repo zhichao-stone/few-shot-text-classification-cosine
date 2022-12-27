@@ -33,7 +33,7 @@ baseline原文地址：[DataFountain 交流讨论](https://discussion.datafounta
   - [TRAIN_FILE]：训练集文件名称，可选项`train.json`、`new_train_aug_trans.json`、`new_train_TF.json`
   - [BATCH_SIZE]：批大小，由于本地带不动，默认设为4
   - [NUM_CLASS]：类别数量，默认设为32
-  - [METHOD]：设置是使用Baseline模型还是余弦语义相似度模型，可选项`Basline`、`Cosine`，默认为`Cosine`
+  - [METHOD]：设置是使用Baseline模型还是余弦语义相似度模型，可选项`Baseline`、`Cosine`，默认为`Cosine`
   - 其余参数见`config.py`
 
 - **测试：**
