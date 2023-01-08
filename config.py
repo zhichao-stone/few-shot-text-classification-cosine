@@ -44,7 +44,7 @@ class Config(object):
         for key in args.__dict__:
             setattr(self, key, args.__dict__[key])
         
-        method_options = ['Baseline', 'Cosine', 'WeightedBERT', 'Fusion']
+        method_options = ['Baseline', 'Cosine', 'WeightedBERT']
         assert self.method in method_options
 
         # device
