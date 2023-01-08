@@ -50,12 +50,14 @@ baseline原文地址：[DataFountain 交流讨论](https://discussion.datafounta
 | -------------------------------------- | ---------------- | ---------------- |
 | Baseline                               | 0.675            | 0.724 |
 | Cosine   (数据title权重 $\alpha=0.4$)  | 0.687            | 0.763 |
-| Cosine + TF   ($\alpha=0.4$)       | 0.661            | 0.969 |
-| Cosine + Trans + EDA   ($\alpha=0.4$) | 0.687            | 0.919 |
-| Cosine    ($\alpha=0.6$)               | **0.689**        | 0.715 |
+| Cosine + TF   ( $\alpha=0.4$)       | 0.661            | 0.969 |
+| Cosine + Trans + EDA   ( $\alpha=0.4$) | 0.687            | 0.919 |
+| Cosine    ( $\alpha=0.6$)               | **0.689**        | 0.715 |
 | Baseline  + Trans                      | 0.682            |   0.982       |
 | Baseline  + Trans + EDA                | 0.685            |   0.991        |
 | Baseline  + Trans + EDA + TF           | 0.681            |   0.998       |
+| Baseline  + TF (1:1生成增强数据)        | 0.689            |   0.958      |
+| Baseline  + TF (1:3生成增强数据)           | **0.6902**            |   1.000      |
 
 TF效果差可能是因为没有对title做改变，而Cosine模型加大了title的权重；而TF和aug_trans在训练时感觉都过拟合了。
 
