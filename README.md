@@ -46,13 +46,16 @@ baseline原文地址：[DataFountain 交流讨论](https://discussion.datafounta
 
 各测试的详细结果见`result.txt`，这里放出简化结果：
 
-| 模型                                   | 测试集上macro f1 |
-| -------------------------------------- | ---------------- |
-| Basline                                | 0.675            |
-| Cosine   (数据title权重 $\alpha=0.4$)  | 0.687            |
-| Cosine with TF   ($\alpha=0.4$)        | 0.661            |
-| Cosine with aug_trans   ($\alpha=0.4$) | 0.687            |
-| Cosine    ($\alpha=0.6$)               | **0.689**        |
+| 模型                                   | 测试集上macro f1 | 验证集上f1       |
+| -------------------------------------- | ---------------- | ---------------- |
+| Basline                                | 0.675            |                 |
+| Cosine   (数据title权重 $\alpha=0.4$)  | 0.687            |                 |
+| Cosine with TF   ($\alpha=0.4$)        | 0.661            |                 |
+| Cosine with aug_trans   ($\alpha=0.4$) | 0.687            |                 |
+| Cosine    ($\alpha=0.6$)               | **0.689**        |                 |
+| Basline  + Trans                       | 0.682            |   0.9819        |
+| Basline  + Trans + EDA                 | 0.685            |   0.9914        |
+| Basline  + Trans + EDA + TF            | 0.681            |   0.9976        |
 
 TF效果差可能是因为没有对title做改变，而Cosine模型加大了title的权重；而TF和aug_trans在训练时感觉都过拟合了。
 
