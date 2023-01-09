@@ -11,11 +11,18 @@ baseline原文地址：[DataFountain 交流讨论](https://discussion.datafounta
 
 #### 2. 数据说明：
 
-训练和测试数据存放在data/
+训练和测试数据存放在[data/](data/)
 
-- train.json：原始训练数据
-- new_train_aug_trans：中英回译增强
-- new_train_TF：基于TF-IDF词频做概率替换增强
+- train.json：训练数据
+- new_train_trans.json：中英回译增强
+- new_train_trans_eda.json：中英回译+EDA数据增强
+- new_train_TF.json：基于TF-IDF词频做概率替换增强
+
+训练数据生成相关放在[data/data_label](data/data_label)
+
+- data_label.py：数据标注代码
+- origin_data.json：原始数据
+- taxonomy.json：分类字典
 
 #### 3. 运行方式
 
@@ -51,7 +58,7 @@ baseline原文地址：[DataFountain 交流讨论](https://discussion.datafounta
 | Baseline                               | 0.675            | 0.724 |
 | Cosine   (数据title权重 $\alpha=0.4$)  | 0.687            | 0.763 |
 | Cosine + TF   ( $\alpha=0.4$)       | 0.661            | 0.969 |
-| Cosine + Trans + EDA   ( $\alpha=0.4$) | 0.687            | 0.919 |
+| Cosine + Trans   ( $\alpha=0.4$) | 0.687            | 0.919 |
 | Cosine    ( $\alpha=0.6$)               | **0.689**        | 0.715 |
 | Baseline  + Trans                      | 0.682            |   0.982       |
 | Baseline  + Trans + EDA                | 0.685            |   0.991        |
